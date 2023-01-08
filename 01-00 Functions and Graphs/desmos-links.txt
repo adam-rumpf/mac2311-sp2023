@@ -1,0 +1,41 @@
+Linear Functions
+https://www.desmos.com/calculator/z3btzrduws
+
+Quadratic Functions
+https://www.desmos.com/calculator/fbvnyf5kjt
+
+Polynomial Degrees
+https://www.desmos.com/calculator/qsbbabo8nn
+
+Rational Powers
+https://www.desmos.com/calculator/l363opfjp2
+
+Negative Powers
+https://www.desmos.com/calculator/fanj3e0kxd
+
+Horizontal Line Test
+https://www.desmos.com/calculator/z4m04ptlzu
+
+Exponential Function
+https://www.desmos.com/calculator/9dvte0qgdz
+
+Reciprocal Exponential Bases
+https://www.desmos.com/calculator/6iu9c76qx1
+
+Exponential Scaling and Shifting
+https://www.desmos.com/calculator/1s49jfdmqz
+
+Exponential Scaling and Base Change
+https://www.desmos.com/calculator/qx9h0uzfs1
+
+Natural Exponential Base
+https://www.desmos.com/calculator/gamd990ugx
+
+Exponential and Logarithmic Functions
+https://www.desmos.com/calculator/xh5isjjctc
+
+Basic Trigonometric Functions:
+https://www.desmos.com/calculator/zltxawnokc
+
+Amplitude and Wavelength:
+https://www.desmos.com/calculator/buyaypospd
