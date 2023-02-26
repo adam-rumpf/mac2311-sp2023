@@ -1,0 +1,145 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4598,        137]
+NotebookOptionsPosition[      4091,        119]
+NotebookOutlinePosition[      4645,        139]
+CellTagsIndexPosition[      4602,        136]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "f", ",", "l", ",", "newton", ",", "y0", ",", "p1", ",", "lines", ",", 
+       "labels"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f", "[", "x_", "]"}], ":=", 
+       RowBox[{"x", "-", 
+        SuperscriptBox["x", "3"], "+", "2"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"l", "[", "a_", "]"}], "[", "x_", "]"}], ":=", 
+       RowBox[{
+        RowBox[{"f", "[", "a", "]"}], "+", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"f", "'"}], "[", "a", "]"}], 
+         RowBox[{"(", 
+          RowBox[{"x", "-", "a"}], ")"}]}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"newton", "[", "x_", "]"}], ":=", 
+       RowBox[{"x", "-", 
+        FractionBox[
+         RowBox[{"f", "[", "x", "]"}], 
+         RowBox[{
+          RowBox[{"f", "'"}], "[", "x", "]"}]]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"y0", "=", 
+       RowBox[{"f", "[", "x0", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"p1", "=", 
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"f", "[", "x", "]"}], ",", 
+           RowBox[{
+            RowBox[{"l", "[", "x0", "]"}], "[", "x", "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "0", ",", "3"}], "}"}], ",", 
+         RowBox[{"PlotStyle", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Directive", "[", 
+             RowBox[{"Black", ",", "Thick"}], "]"}], ",", 
+            RowBox[{"Directive", "[", "Red", "]"}]}], "}"}]}]}], "]"}]}], ";",
+       "\[IndentingNewLine]", 
+      RowBox[{"lines", "=", 
+       RowBox[{"Graphics", "[", 
+        RowBox[{"{", 
+         RowBox[{"Red", ",", 
+          RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+          RowBox[{"Point", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x0", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"x0", ",", 
+               RowBox[{"f", "[", "x0", "]"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"newton", "[", "x0", "]"}], ",", "0"}], "}"}]}], "}"}],
+            "]"}], ",", "Dashed", ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x0", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"x0", ",", 
+               RowBox[{"f", "[", "x0", "]"}]}], "}"}]}], "}"}], "]"}]}], 
+         "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Show", "[", 
+       RowBox[{"p1", ",", "lines", ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "2.5"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "2"}], ",", "4"}], "}"}]}], "}"}]}]}], "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x0", ",", "1.1"}], "}"}], ",", "0", ",", "2", ",", "0.01"}], 
+    "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.826405674178015*^9, 3.8264057243752885`*^9}, {
+  3.8265488090608444`*^9, 3.8265488394195285`*^9}, {3.826759478239719*^9, 
+  3.826759859716756*^9}},
+ CellLabel->
+  "In[421]:=",ExpressionUUID->"8191e292-4901-42b3-8bf1-16fb0ebebf31"]
+},
+WindowSize->{1333, 646},
+WindowMargins->{{Automatic, 111}, {94, Automatic}},
+TaggingRules->{
+ ScrollPosition -> {0., 360.}, 
+  "WelcomeScreenSettings" -> {"FEStarting" -> False}, 
+  "SlideshowSettings" -> {"Toolbar" -> True}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"07eb68cb-61c6-4de4-a13d-f537f592750c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3529, 97, 223, "Input",ExpressionUUID->"8191e292-4901-42b3-8bf1-16fb0ebebf31"]
+}
+]
+*)
+

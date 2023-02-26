@@ -1,0 +1,198 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7196,        190]
+NotebookOptionsPosition[      6838,        176]
+NotebookOutlinePosition[      7242,        192]
+CellTagsIndexPosition[      7199,        189]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"With", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"lb", "=", "1"}], ",", 
+      RowBox[{"ub", "=", "2"}], ",", 
+      RowBox[{"lby", "=", "0"}], ",", 
+      RowBox[{"uby", "=", "1.5"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Module", "[", 
+       RowBox[{
+        RowBox[{"{", "g", "}"}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"g", "[", "x_", "]"}], ":=", 
+          RowBox[{
+           RowBox[{"4", 
+            RowBox[{"(", 
+             RowBox[{"x", "-", "0.75"}], ")"}], 
+            RowBox[{"(", 
+             RowBox[{"x", "-", "1"}], ")"}], 
+            RowBox[{"(", 
+             RowBox[{"x", "-", "2"}], ")"}]}], "+", "1"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"TableForm", "[", 
+          RowBox[{"{", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Plot", "[", 
+              RowBox[{
+               RowBox[{"g", "[", "x", "]"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"x", ",", 
+                 RowBox[{
+                  FractionBox[
+                   RowBox[{"lb", "+", "ub"}], "2"], "-", "w1"}], ",", 
+                 RowBox[{
+                  FractionBox[
+                   RowBox[{"lb", "+", "ub"}], "2"], "+", "w1"}]}], "}"}], ",", 
+               RowBox[{"Ticks", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"Table", "[", 
+                   RowBox[{"i", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"i", ",", 
+                    RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}], ",", 
+                  RowBox[{"Table", "[", 
+                   RowBox[{"i", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"i", ",", 
+                    RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], 
+                 "}"}]}], ",", 
+               RowBox[{"LabelStyle", "\[Rule]", "White"}], ",", 
+               RowBox[{"PlotRange", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"g", "[", 
+                    FractionBox[
+                    RowBox[{"lb", "+", "ub"}], "2"], "]"}], "-", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    FractionBox[
+                    RowBox[{"uby", "-", "lby"}], 
+                    RowBox[{"ub", "-", "lb"}]], ")"}], "w1"}]}], ",", 
+                  RowBox[{
+                   RowBox[{"g", "[", 
+                    FractionBox[
+                    RowBox[{"lb", "+", "ub"}], "2"], "]"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    FractionBox[
+                    RowBox[{"uby", "-", "lby"}], 
+                    RowBox[{"ub", "-", "lb"}]], ")"}], "w1"}]}]}], "}"}]}]}], 
+              "]"}], ",", 
+             RowBox[{"Plot", "[", 
+              RowBox[{
+               RowBox[{"g", "[", "x", "]"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"x", ",", 
+                 RowBox[{
+                  FractionBox[
+                   RowBox[{"lb", "+", "ub"}], "2"], "-", "w2"}], ",", 
+                 RowBox[{
+                  FractionBox[
+                   RowBox[{"lb", "+", "ub"}], "2"], "+", "w2"}]}], "}"}], ",", 
+               RowBox[{"Ticks", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"Table", "[", 
+                   RowBox[{"i", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"i", ",", 
+                    RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}], ",", 
+                  RowBox[{"Table", "[", 
+                   RowBox[{"i", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"i", ",", 
+                    RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}], 
+                 "}"}]}], ",", 
+               RowBox[{"LabelStyle", "\[Rule]", "White"}], ",", 
+               RowBox[{"PlotRange", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"g", "[", 
+                    FractionBox[
+                    RowBox[{"lb", "+", "ub"}], "2"], "]"}], "-", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    FractionBox[
+                    RowBox[{"uby", "-", "lby"}], 
+                    RowBox[{"ub", "-", "lb"}]], ")"}], "w2"}]}], ",", 
+                  RowBox[{
+                   RowBox[{"g", "[", 
+                    FractionBox[
+                    RowBox[{"lb", "+", "ub"}], "2"], "]"}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    FractionBox[
+                    RowBox[{"uby", "-", "lby"}], 
+                    RowBox[{"ub", "-", "lb"}]], ")"}], "w2"}]}]}], "}"}]}]}], 
+              "]"}]}], "}"}], "}"}], "]"}]}]}], "\[IndentingNewLine]", "]"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"w1", ",", "0.001", ",", "\"\<A\>\""}], "}"}], ",", "0.001", 
+        ",", 
+        FractionBox[
+         RowBox[{"lb", "+", "ub"}], "2"]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"w2", ",", 
+          FractionBox[
+           RowBox[{"lb", "+", "ub"}], "2"], ",", "\"\<B\>\""}], "}"}], ",", 
+        "0.001", ",", 
+        FractionBox[
+         RowBox[{"lb", "+", "ub"}], "2"]}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8264889139236603`*^9, 3.8264891084931564`*^9}, {
+   3.8264891644546547`*^9, 3.826489167452145*^9}, {3.8264892493230286`*^9, 
+   3.82648936010466*^9}, {3.826489435675123*^9, 3.82648952226049*^9}, {
+   3.8264895945541077`*^9, 3.8264896438457885`*^9}, {3.8264897563497086`*^9, 
+   3.8264897702987585`*^9}, {3.8264898048233967`*^9, 
+   3.8264899587574606`*^9}, {3.826489994753668*^9, 3.826490004482051*^9}, {
+   3.8264900870679445`*^9, 3.8264901621462145`*^9}, {3.8264902009451137`*^9, 
+   3.8264902040928135`*^9}, {3.826547639842671*^9, 3.826547777137706*^9}, 
+   3.826664195492467*^9},
+ CellLabel->"In[20]:=",ExpressionUUID->"67bee438-01ca-4bea-b633-509fc73b125b"]
+},
+WindowSize->{1600, 857},
+WindowMargins->{{Automatic, 109}, {Automatic, 36}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f38add48-f74c-416b-9814-6ba512a225f8"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 6276, 154, 277, "Input",ExpressionUUID->"67bee438-01ca-4bea-b633-509fc73b125b"]
+}
+]
+*)
+
