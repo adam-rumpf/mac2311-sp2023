@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3865,        114]
-NotebookOptionsPosition[      3415,         98]
-NotebookOutlinePosition[      3912,        116]
-CellTagsIndexPosition[      3869,        113]
+NotebookDataLength[      3951,        116]
+NotebookOptionsPosition[      3470,         99]
+NotebookOutlinePosition[      3998,        118]
+CellTagsIndexPosition[      3955,        115]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -78,8 +78,8 @@ Cell[BoxData[{
           RowBox[{"Style", "[", 
            RowBox[{
             RowBox[{
-            "\"\<\!\(\*SuperscriptBox[SubscriptBox[\(\[Integral]\), \(0\)], \
-\(x\)]\)f(t)\[DifferentialD]t = \>\"", "<>", 
+            "\"\<g(x)=\!\(\*SuperscriptBox[SubscriptBox[\(\[Integral]\), \
+\(0\)], \(x\)]\)f(t)\[DifferentialD]t = \>\"", "<>", 
              RowBox[{"ToString", "[", 
               RowBox[{"g", "[", "b", "]"}], "]"}]}], ",", "12"}], "]"}], ",", 
           RowBox[{"{", 
@@ -93,13 +93,15 @@ Cell[BoxData[{
  CellChangeTimes->{{3.8388542812351627`*^9, 3.838854309441414*^9}, {
   3.838854354734625*^9, 3.838854503804165*^9}, {3.838854550215414*^9, 
   3.838854557056389*^9}, {3.8388545907530384`*^9, 3.838854688126197*^9}, {
-  3.8899792119585104`*^9, 3.8899793043515196`*^9}},
- CellLabel->"In[19]:=",ExpressionUUID->"e1a40401-4d88-4fea-a0d2-e1ca3edbde37"]
+  3.8899792119585104`*^9, 3.8899793043515196`*^9}, {3.890480268440256*^9, 
+  3.8904802694295044`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"e1a40401-4d88-4fea-a0d2-e1ca3edbde37"]
 },
-WindowSize->{760, 833},
-WindowMargins->{{367, Automatic}, {Automatic, 77}},
+WindowSize->{1920, 1037},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 TaggingRules->{
  "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
+Magnification:>1.5 Inherited,
 FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"80623849-91b0-4b2b-97f1-6efc343ad282"
@@ -115,7 +117,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2853, 76, 211, "Input",ExpressionUUID->"e1a40401-4d88-4fea-a0d2-e1ca3edbde37"]
+Cell[558, 20, 2908, 77, 202, "Input",ExpressionUUID->"e1a40401-4d88-4fea-a0d2-e1ca3edbde37"]
 }
 ]
 *)
